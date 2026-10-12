@@ -1,0 +1,51 @@
+This mod adds 6 talent branches:
+1. Warrior
+2. Ranger
+3. Mage
+4. Summoner
+5. Warlock
+6. Traveler
+
+--------------------
+
+Complete quests to increase your level
+For each level, you receive 1 talent point for EACH branch
+The list of quests can be found in the tab below
+
+When completing tasks, some of them count for all players on the server
+General quests are marked with the symbol: ⟳
+Local quests are marked with the symbol: ⟲
+
+Some operations are registered with a delay of a couple of seconds (there may be a delay of up to 15 seconds on the server)
+Some tasks have been replaced for the Calamity Mod
+
+--------------------
+
+Only 1 talent branch can be active at a time
+You can change the active talent branch at any time
+You can reset and redistribute your talents at any time
+
+A set of talent tasks for the Calamity Mod
+
+--------------------
+
+The Warlock branch is a reworked version of the Mage mechanic
+You will need to keep your health low to increase your damage.
+
+--------------------
+
+The mod defines configuration settings.
+They allow you to customize the main menu controls.
+
+--------------------
+
+[BETTA]:
+
+The mod is under development
+The mod is adapted for multiplayer but has undergone limited multiplayer testing
+Please report any bugs you find
+
+Some of the sprites are not yet finished.
+
+The talent variations are minimally populated for the mod's initial release. 
+They will be expanded upon in the future.

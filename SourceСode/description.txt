@@ -1,0 +1,24 @@
+This mod adds 6 talent branches:
+1. Warrior
+2. Ranger
+3. Mage
+4. Summoner
+5. Warlock
+6. Traveler
+
+Complete tasks and level up to earn talent points for talent trees.
+
+Traveler talents will give you the ability to explore the world more efficiently and quickly.
+
+The Warlock is a reworked version of the Mage. It will require you to keep your health low to maximize damage.
+
+[BETTA]:
+-------
+The mod is under development
+The mod is adapted for multiplayer but has undergone limited multiplayer testing
+Please report any bugs you find
+-------
+Some of the sprites are not yet finished.
+-------
+The talent variations are minimally populated for the mod's initial release. 
+They will be expanded upon in the future.
