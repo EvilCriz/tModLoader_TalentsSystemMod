@@ -1,0 +1,710 @@
+Keybinds: {
+	MainMenu.DisplayName: Main Menu
+	Charge.DisplayName: Dash
+	RodDiscord.DisplayName: Rod of Discord effect
+	SwithAmmo.DisplayName: Switch ammunition
+	SwithSandStorm.DisplayName: Toggle effect: Sandstorm in a Bottle
+	ExploreMap.DisplayName: Explore Map
+	SwithWithoutCollisionProjectile.DisplayName: Toggle effect: projectiles pass through blocks
+	SwithProjectileAIM.DisplayName: Toggle effect: Projectile AIM
+	Reincarnation.DisplayName: Talent Activation: {$Talents.Reincarnation.Header}
+	SpawnRate.DisplayName: Toggle effect: Spawn Rate
+	FullManaRestoration.DisplayName: Full Mana Restoration
+	ManaHealing.DisplayName: Health restoration for mana
+	HealthRegenMana.DisplayName: Talent Activation: {$Talents.HealthRegenMana.Header}
+}
+
+Common: {
+	Common_KeybindWarning: Assign a hotkey to open the main menu
+	Common_Unknown: Unknown
+	Common_Or: or
+	Common_And: and
+
+	DamageDipslayName: {
+		Melee: melee damage
+		Ranger: ranged damage
+		Mage: magic damage
+		Summoner: summoner damage
+	}
+}
+
+MainMenu: {
+	UI_ModDescription:
+		'''
+		This mod adds 6 talent branches:
+		1. Warrior
+		2. Ranger
+		3. Mage
+		4. Summoner
+		5. Warlock
+		6. Traveler
+
+		Complete quests to increase your level
+		For each level, you receive 1 talent point for EACH branch
+		The list of quests can be found in the tab below
+
+		When completing tasks, some of them count for all players on the server
+		General quests are marked with the symbol: ⟳
+		Local quests are marked with the symbol: ⟲
+
+		Some operations are registered with a delay of a couple of seconds
+		(there may be a delay of up to 15 seconds on the server)
+		Some tasks have been replaced for the Calamity Mod
+
+
+		Only 1 talent branch can be active at a time
+		You can change the active talent branch at any time
+
+		You can reset and redistribute your talents at any time
+
+		A set of talent tasks for the Calamity Mod.
+
+
+		The Warlock branch is a reworked version of the Mage mechanic
+		You will need to keep your health low to increase your damage.
+
+
+		The mod defines configuration settings.
+		They allow you to customize the main menu controls.
+
+
+		[BETTA]:
+
+		The mod is under development
+		The mod is adapted for multiplayer but has undergone limited multiplayer testing
+		Please report any bugs you find
+
+		Some of the sprites are not yet finished.
+
+		The talent variations are minimally populated for the mod's initial release. 
+		They will be expanded upon in the future.
+		'''
+
+	Header: {
+		UI_Header_Changelog: Changelog
+		UI_Header_Theme: Themes
+		UI_Header_Info: Information
+		UI_Header_Quests: Quests
+		UI_Header_Melee: Warrior
+		UI_Header_Range: Ranger
+		UI_Header_Magic: Mage
+		UI_Header_Warlock: Warlock
+		UI_Header_Summon: Summoner
+		UI_Header_Travel: Traveler
+		UI_Header_Current: current
+	}
+
+	Themes: {
+		UI_Theme_Terraria: Terraria Theme
+		UI_Theme_Dark: Dark Theme
+		UI_Theme_Blue: Blue Theme
+		UI_Theme_Brown: Brown Theme
+		UI_Theme_Phantom: Phantom Theme
+	}
+
+	PointsInfo: {
+		UI_Available_Points: Available talents points: {0}
+		UI_Spent_Points: Spent talents points: {0}
+		UI_Button_ActivateBranch: Mods.TalentsSystem.MainMenu.PointsInfo.UI_Button_ActivateBranch
+	}
+
+	Buttons: {
+		UI_Button_ActivateBranch: Activate
+		UI_Button_ResetPointsBranch: Reset
+		UI_Button_Ok: Confirm
+		UI_Button_Cancel: Cancel
+		UI_Button_CompletedQuest: Completed Quests
+		UI_Button_IncompletedQuest: Incompleted Quests
+		UI_Button_AllQuest: All Quests
+	}
+
+	LevelInfo: {
+		UI_LevelInfo_Level: Level: {0} / {1}
+		UI_LevelInfo_Exp: Exp: {0} / {1}
+		UI_LevelInfo_Quests: Quests: {0} / {1}
+	}
+
+	Confirmation: {
+		UI_Confirm_Header: Confirmation
+		UI_Confirm_SwitchBranch: Are you sure you want to switch to this talent tree?
+		UI_Confirm_ResetPoints: Are you sure you want to reset all talent points for this tree?
+		UI_Confirm_SpendPoint: Are you sure you want to spend a talent point to upgrade the {0} skill to level {1}?
+	}
+
+	Quests.UI_Quests_Exp: Exp: {0}
+
+	Talents: {
+		UI_Talents_ActivateType: Activation type:
+		UI_Talents_ActivationType_Passive: "{$MainMenu.Talents.UI_Talents_ActivateType} Passive"
+		UI_Talents_ActivationType_Active: "{$MainMenu.Talents.UI_Talents_ActivateType} Active"
+		UI_Talents_ActivationType_Switchable: "{$MainMenu.Talents.UI_Talents_ActivateType} Switchable"
+		UI_Talents_CurrentLevel: Current level:
+		UI_Talents_NextLevel: Next level:
+	}
+}
+
+Quests: {
+	TalkNPC.Quest_TalkNPC: Talk to the NPC: {0}
+
+	Kill: {
+		Quest_Kill_Any_Count: Kill {0} NPCs of any kind.
+		Quest_Kill_Any: Kill any NPC
+		Quest_Kill_Any_Type: Kill any NPC: {0}
+		Quest_Kill_Any_Boss: Kill any boss
+		Quest_Kill_Boss: Kill any boss: {0}
+		Quest_Kill_Town: Kill any town NPC
+		Quest_Kill_TownNPC: Kill town NPC : {0}
+	}
+
+	Items: {
+		Quest_Items_Use: Use item: {0}
+		Quest_Items_Use_Max: Use the maximum number of {0}
+		Quest_Items_Any_Receive: Receive any items: {0}
+		Quest_Items_Any_Receive_Count: Receive any items: {0}, quantity {1}
+		Quest_Items_All_Receive: Receive together items: {0}
+		Quest_Items_All_Receive_Count: Receive together items: {0}, each in a quantity of {1}
+	}
+
+	Events: {
+		Quest_Events_EndEvent: Complete the event: {0}
+		Quest_Events_EndEventOldArmy: "{$Quests.Events.Quest_Events_EndEvent} (Tier: {1})"
+	}
+
+	Other.Quest_Other_PlayerDeath: Die
+	Visited.Quest_Visited_Zone: Visit the area: {0}
+
+	Destroy: {
+		Quest_Destroy_AnyObject: Destroy any object (by any means; only within a 25-tile radius)
+		Quest_Destroy_AnyObject_Count: Destroy {0} tiles of any kind (by any means; only within a 25-tile radius)
+		Quest_Destroy_Object: Destroy the target: {0} (by any means; only within a 25-tile radius)
+	}
+}
+
+Condtions.Condtions_InShimmeringLake: In the shimmering lake
+
+Notifications: {
+	Notification_Quest_Header: Quest Completed
+	Notification_LevelUp_Header: Level UP
+	Notification_LevelUp_Body: You have advanced to level: {0}
+}
+
+Configs: {
+	Headers.MainMenuHeader: User Interface
+
+	TalentSystemConfig: {
+		DisplayName: Talent System Config
+		Headers.MainMenuHeader: Main Menu Header Header
+
+		AutoConfirmation: {
+			Label: Auto Confirmation
+			Tooltip: Prevents the display of confirmation windows
+		}
+
+		CloseMenuByEsc: {
+			Label: Closing the menu with the Esc key
+			Tooltip: Allows closing menus and pop-up notifications using the Esc key
+		}
+	}
+}
+
+Talents: {
+	MaxPets: {
+		Header: Overlord
+		Description: The maximum number of minions is increased by {0}
+	}
+
+	MoveSpeed: {
+		Header: Go. Gotta go fast. Gotta go fast. Gotta go faster!
+		Description: Movement speed increased by: {0}%
+	}
+
+	LifeRegen: {
+		Header: Healer's Spirit
+		Description: Health regeneration increased by: {0}
+	}
+
+	LifeRegenOutOfCombat: {
+		Header: Peacekeeper's Shield
+		Description:
+			'''
+			{$Talents.LifeRegen.Description}
+			{$TalentsCommon.OutOfCombat@1}
+			'''
+	}
+
+	WingsTime: {
+		Header: Spirit of the Wind
+		Description: Flight time increased by: {0}%
+	}
+
+	ImmuneTime: {
+		Header: Disembodied spirit
+		Description: Invulnerability duration after taking damage increased by: +{0} sec
+	}
+
+	Luck: {
+		Header: Rune of Good Fortune
+		Description: Increases the player's luck by {0}
+	}
+
+	MaxLife: {
+		Header: The Heart of Life
+		Description: Player's maximum health is increased by {0}
+	}
+
+	MaxMana: {
+		Header: The Heart of Magic
+		Description: Player's maximum mana is increased by {0}
+	}
+
+	Armor: {
+		Header: Stone of Resilience
+		Description: Player's defense is increased by {0}
+	}
+
+	DecreaseManaCost: {
+		Header: Preservation of magical power
+		Description: Mana cost for using items reduced by {0}%
+	}
+
+	Damage: {
+		Header: Spirit of War
+
+		OverrideHeaders: {
+			Range: The Magic Quiver
+			Magic: Magic Amulet
+		}
+
+		Description: Player's damage {$TalentsCommon.DamageType} is increased by: {1}%
+	}
+
+	DamageLastTargetWithinRadius: {
+		Header: "{$Talents.Damage.Header}"
+		Description:
+			'''
+			{$Talents.Damage.Description}
+			{$TalentsCommon.LastTargetWithinRadius@2}
+			'''
+	}
+
+	DamageIsMaxMana: {
+		Header: "{$Talents.Damage.OverrideHeaders.Magic}"
+		Description:
+			'''
+			{$Talents.Damage.Description}
+			{$TalentsCommon.IsMaxMana@2}
+			'''
+	}
+
+	DamageIsMaxLife: {
+		Header: "{$Talents.Damage.Header}"
+		Description:
+			'''
+			{$Talents.Damage.Description}
+			{$TalentsCommon.IsMaxLife@2}
+			'''
+	}
+
+	DamageWarlockBase: {
+		Header: Demon's Heart
+		Description:
+			'''
+			Damage {$TalentsCommon.DamageType} reduced by {1}%.
+			+{2} damage per {3} missing health.
+			+{4}% damage per {5}% missing health.
+			'''
+	}
+
+	DamageIsLowHealth: {
+		Header: Demon Amulet
+		Description:
+			'''
+			+{0}% damage {$TalentsCommon.DamageType@1}
+			{$TalentsCommon.IsLowHealth@2}
+			'''
+	}
+
+	StackAttack: {
+		Header: Multiple attack
+		Description:
+			'''
+			Dealing {$TalentsCommon.DamageType} damage grants you a charge
+			Each charge increases base damage by {1}
+			Maximum charges: {2}
+			Upon reaching the maximum, the charges are reset
+			'''
+	}
+
+	CritChance: {
+		Header: Luck Talisman
+		Description: Increases critical hit chance damage {$TalentsCommon.DamageType} chance by {1}%
+	}
+
+	CritDamage: {
+		Header: Critical damage
+		Description: Increases critical damage {$TalentsCommon.DamageType} chance by {1}%
+	}
+
+	AttackSpeed: {
+		Header: Living Fury
+		Description: Increases attack speed {$TalentsCommon.DamageType} by {1}%
+	}
+
+	ArmorPenetration: {
+		Header: A spirit of determination
+		Description: Armor penetration {$TalentsCommon.DamageType} increases by {1}
+	}
+
+	Knokback: {
+		Header: Physical strength
+		Description: Knockback {$TalentsCommon.DamageType} is increased by {1}%
+	}
+
+	AttackSpeedWhips: {
+		Header: Overseer
+		Description: Attack speed {$TalentsCommon.DamageType} is increased by {1}% (for whips only)
+	}
+
+	DamageWhips: {
+		Header: Overseer
+		Description: Damage {$TalentsCommon.DamageType} is increased by {1}% (for whips only)
+	}
+
+	DamageIsStandingStill: {
+		Header: "{$Talents.Damage.OverrideHeaders.Range}"
+		Description:
+			'''
+			{$Talents.Damage.Description}
+			{$TalentsCommon.IsStandingStill}
+			'''
+	}
+
+	CritChanceIsStandingStill: {
+		Header: "{$Talents.CritChance.Header}"
+		Description:
+			'''
+			{$Talents.CritChance.Description}
+			{$TalentsCommon.IsStandingStill}
+			'''
+	}
+
+	AttackSpeedIsStandingStill: {
+		Header: "{$Talents.AttackSpeed.Header}"
+		Description:
+			'''
+			{$Talents.AttackSpeed.Description}
+			{$TalentsCommon.IsStandingStill}
+			'''
+	}
+
+	Lifesteal: {
+		Header: Shadow of the Spirit of Dracula
+		Description:
+			'''
+			Dealing damage {$TalentsCommon.DamageType} restores {1}% of your health.
+			Values ​​less than 1 will accumulate.
+			'''
+	}
+
+	LifestealIsLowHealth: {
+		Header: "{$Talents.Lifesteal.Header}"
+		Description:
+			'''
+			{$Talents.Lifesteal.Description}
+			{$TalentsCommon.IsLowHealth@2}
+			'''
+	}
+
+	Explosion: {
+		PreDescription: Causes you to emit an explosive shockwave that deals damage {$TalentsCommon.DamageType} equal to {1}% of
+		PostDescription: Explosion radius: {2} blocks. Cooldown: {3} sec.
+	}
+
+	HealExplosion: {
+		Header: Overflowing vital energy
+		Description:
+			'''
+			Restoring 10 or more health triggers the effect:
+			{$Talents.Explosion.PreDescription} the health restored. 
+			{$Talents.Explosion.PostDescription}
+			'''
+	}
+
+	ManaExplosion: {
+		Header: Overflowing energy
+		Description:
+			'''
+			Restoring 10 or more mana triggers the effect:
+			{$Talents.Explosion.PreDescription} the mana restored.
+			{$Talents.Explosion.PostDescription}
+			'''
+	}
+
+	ExplosionByCrit: {
+		Header: Overflowing accuracy
+		Description:
+			'''
+			Upon dealing critical damage triggers the effect:
+			{$Talents.Explosion.PreDescription} the dealing damage.
+			{$Talents.Explosion.PostDescription}
+			'''
+	}
+
+	HealFactor: {
+		Increase: {
+			Header: Overhealing
+			Description: When restoring 10 or more Health, you restore an additional {0}% of the healing received
+		}
+	}
+
+	ManaFactor: {
+		Increase: {
+			Header: Mana Shard
+			Description: When restoring 10 or more Mana, you restore an additional {0}% of the mana received
+		}
+
+		Decrease: {
+			Header: Mana Cloak
+			Description: When you spend 3 or more mana, you have a {0}% chance to restore mana equal to {1}% of the mana spent.
+		}
+	}
+
+	BuffTimeReduced: {
+		Header: The Alchemist's Apprentice
+		Description: The duration of the «{0}» debuff has been reduced by {1}%
+	}
+
+	BuffTimeIncreased: {
+		Header: The Witch's Apprentice
+		Description: The duration of the «{0}» effect is increased by {1}%.
+	}
+
+	ExploreMap: {
+		Header: The Spirit of Omniscience
+		Description: Scouts the entire map when activated
+	}
+
+	Charge: {
+		Header: Cloak of Space
+		Description:
+			'''
+			The character dashes forward. They are invulnerable during the dash
+			Speed: {0}
+			Immune Time: {1} sec
+			Cooldown: {2} sec
+			'''
+	}
+
+	RodDiscord: {
+		Header: Plunge into chaos
+		Description:
+			'''
+			Upon activation, it fully simulates the use of the item: {0}
+			Cannot be used if the player has the debuff: {1}
+			'''
+	}
+
+	ImmoneChaosState: {
+		Header: Chaos Control
+		Description: You gain immunity to the «{0}» buff if your character has full health.
+	}
+
+	AmmoSwith: {
+		Header: Legolas's apprentice
+		Description:
+			'''
+			Replaces Wooden Arrows with: {0}
+			Replaces Musket Balls with: {1}
+			(The damage remains unchanged)
+			----
+			Switches between standard and special ammunition when the hotkey is pressed
+			(the hotkey name matches the skill name)
+			----
+			Retains the effect of previous talents of this type
+			'''
+	}
+
+	ProjectileAIM: {
+		Header: Hunter's Mark
+		Description:
+			'''
+			Your projectiles {$TalentsCommon.DamageType} are homing. 
+			Pointing accuracy coefficient: {1}. 
+			The target is the NPC closest within a radius of {2} tiles.
+			'''
+	}
+
+	AccessorysEffect: {
+		Header: The Spirit of an Explorer
+		Description: You gain the accessory's effect: «{0}»
+	}
+
+	BuffsEffect: {
+		Header: The Alchemist's Spirit
+		Description: You gain the buff's effect: «{0}»
+	}
+
+	DebuffsOnDamage: {
+		Header: Poison Master
+		Description:
+			'''
+			When you deal damage {$TalentsCommon.DamageType}, you apply the following debuffs for {1} second(s):
+			{2}
+			'''
+	}
+
+	NoFallDmg: {
+		Header: Wyvern Spirit
+		Description: You do not take fall damage.
+	}
+
+	WithoutCollisionProjectile: {
+		Header: The Elusive Spirit
+		Description: Projectiles {$TalentsCommon.DamageType} pass through the blocks
+	}
+
+	ChanceDropGoldOnKill: {
+		Header: Gold bag
+		Description: Killing an enemy has a {0}% chance to drop an additional gold coin.
+	}
+
+	ChanceNotConsumeAmmo: {
+		Header: The Spirit of the Apocalypse
+		Description: "{0}% chance not to consume ammunition"
+	}
+
+	ShadowDodge: {
+		Header: Holy Protection
+		Description: Grants the Holy Set effect once every {0} seconds.
+	}
+
+	Reincarnation: {
+		Header: Reincarnation
+		Description:
+			'''
+			The player's health drops to 1.
+			The player's health is instantly restored.
+			The player is afflicted with the {0} debuff for 60 seconds.
+			Cannot be used while the player is under the effect of this debuff.
+			Cannot be used if the player is at full health.
+			'''
+	}
+
+	ManaHealing: {
+		Header: Corrupted Stone
+		Description:
+			'''
+			You expend all your mana and restore an equal amount of health.
+			You are afflicted with the {0} debuff for {1} seconds.
+			This ability cannot be reactivated while the debuff is active.
+			Natural mana regeneration is disabled for the first {2} seconds of the debuff's duration.
+			'''
+	}
+
+	HealthRegenMana: {
+		Header: Hand of the Otherworldly
+		Description:
+			'''
+			Reduces your health to 1.
+			Fully restores your mana.
+			Cannot be used if health is less than {0}
+			'''
+	}
+
+	SpawnRate: {
+		Header: Warrior's Banner
+		Description: Changes the enemy spawn rate by a factor of {0}.
+	}
+
+	GrapManaStars: {
+		Header: Drawing energy
+		Description:
+			'''
+			Item ({0}) pickup range increased by {1}%
+			The pull speed does NOT change (like the item: {2}).
+			It stacks with other modifiers.
+			'''
+	}
+
+	FullManaRestoration: {
+		Header: Mana Ring
+		Description:
+			'''
+			Fully restores mana upon activation
+			Applies the {0} effect for {1} seconds
+			If the player already had this debuff with a longer duration, the duration is reduced.
+			Cannot be used again while the effect is active on the player
+			'''
+	}
+
+	HealthCostWhenManaIsLow: {
+		Header: Ring of Sacrifice
+		Description:
+			'''
+			If you do not have enough mana, you spend health instead of mana. 
+			{0} (and similar effects) trigger if you lack both health and mana.
+
+			It is impossible to take fatal damage with this ability.
+			'''
+	}
+}
+
+TalentsCommon: {
+	FloatDesc: (mathematical rounding)
+	DamageType: (type: {0})
+	IsStandingStill: The effect is active only if the character is standing still.
+	OutOfCombat:
+		'''
+		The effect is active only if your character has been out of combat for {0} seconds
+		The combat state updates when your character takes or deals damage
+		'''
+	LastTargetWithinRadius: The effect is active only if the last attacked target is within a radius (in tiles) of {0}
+	IsMaxMana: This effect is active only when the player has full mana and for {0} seconds thereafter
+	IsMaxLife: This effect is active only when the player has full health and for {0} seconds thereafter
+	IsLowHealth: This effect is active only when the player health is {0}% or less
+}
+
+Buffs: {
+	BuffOutOfCombat: {
+		DisplayName: Out of combat
+		Description:
+			'''
+			Time spent out of combat
+			Dealing or taking damage resets the timer
+			It plays an important role for certain talents
+			'''
+	}
+
+	BuffSpawnRate: {
+		DisplayName: Enemy spawn rate
+		Description: The enemy spawn rate has been changed
+	}
+
+	BuffManaHealingCooldown: {
+		DisplayName: "{$Talents.ManaHealing.Header}"
+		Description: Prevents reuse of the skill: {$Talents.ManaHealing.Header}
+	}
+}
+
+Changelogs: {
+	Version: Version
+
+	v_0_0_0_1: {
+		Header: Mod release
+		Description:
+			'''
+			Initial release of the mod.
+
+			The talent tree is minimally populated—just enough to ensure full functionality; 
+			it will be expanded in the future.
+
+			Most sprites are unfinished, 
+			so in-game item icons are being used as placeholders.
+
+			The mod supports multiplayer but has undergone very limited testing.
+
+			Please share any ideas for talents you would like to see, 
+			and report any bugs you encounter.
+			'''
+	}
+}
